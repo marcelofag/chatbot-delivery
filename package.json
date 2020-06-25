@@ -1,0 +1,16 @@
+{
+  "name": "chatdelivery",
+  "version": "1.0.0",
+  "description": "chat bot de delivery via mensagens do whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "chatbot",
+    "dialogflow"
+  ],
+  "author": "marcelo saturnino fagundes",
+  "license": "ISC"
+}
