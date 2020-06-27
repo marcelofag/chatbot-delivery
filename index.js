@@ -1,11 +1,14 @@
-const express = require ("express");
-const bodyParser = require ("body-parser");
+const express = require ("express"); //servidor node para trabalhar com requesiçoes
+const bodyParser = require ("body-parser"); // para trabalhar com requisições post
 
 const app = express();
-app.use(bodyParser.urlencoded({extended:tu=true}));
+app.use(bodyParser.urlencoded({extended:true}));
 
-app.listen(3000, '127.0.0.1', ()=>{
-    console.log('servidor rodando!!!');
+const port = process.env.PORT || 3000;
+const hostname = '127.0.0.1';
+
+app.listen(port, hostname, ()=>{
+    console.log(`servidor rodando na porta: http://${hostname}:${port}`);
 });
 
 app.get('/', (req,res)=>{
