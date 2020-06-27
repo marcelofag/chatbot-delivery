@@ -12,5 +12,8 @@
     "dialogflow"
   ],
   "author": "marcelo saturnino fagundes",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
