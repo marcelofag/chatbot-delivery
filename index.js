@@ -32,7 +32,6 @@ app.post('/pedido', (req,res)=>{
     const quant = req.body.quantidade;
     const metPagamento = req.body.metodo_pagamento;
     const bebida = req.body.bebida;
-
     const pedido = {
         prod,
         quant,
