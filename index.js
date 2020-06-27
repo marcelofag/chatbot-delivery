@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 const port = process.env.PORT || 3000;
 const hostname = '127.0.0.1';
 
-app.listen(port, hostname, ()=>{
+app.listen(port, ()=>{
     console.log(`servidor rodando na porta: http://${hostname}:${port}`);
 });
 
