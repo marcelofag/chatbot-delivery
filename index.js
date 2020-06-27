@@ -4,8 +4,11 @@ const bodyParser = require ("body-parser");
 const app = express();
 app.use(bodyParser.urlencoded({extended:tu=true}));
 
-app.listen(3000, '127.0.0.1', ()=>{
-    console.log('servidor rodando!!!');
+const port = process.env.PORT || 3000;
+const hostname = '127.0.0.1';
+
+app.listen(port, hostname, ()=>{
+    console.log(`servidor rodando na porta: http://${hostname}:${port}`);
 });
 
 app.get('/', (req,res)=>{
